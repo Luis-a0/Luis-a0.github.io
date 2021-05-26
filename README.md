@@ -1,2 +1,2 @@
 # Luis-a0
-Portafolio Personal 
+Repositorio reservado para realizar portafolio personal 
