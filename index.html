@@ -1,7 +1,322 @@
-<html>
-	<head lang="es-VE">
-	</head>
-	<body>
-		<h1>Hello World</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Luis Aviles</title>    <!-- Change it your name  -->
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://github.com/Luis-a0" class="link"  
+          >{LA}. <!--insert your initials here --></a
+        >
+      </h3> <!--use the linkedIn or any link in above href-->
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+			<li class="nav__list-item">
+				<a class="link link--nav" href="#exp">Experiencia Laboral</a>
+			</li>
+			<li class="nav__list-item">
+				<a class="link link--nav" href="#projects">Proyectos</a>
+			</li>
+			<li class="nav__list-item">
+				<a class="link link--nav" href="#skills">Skills</a>
+			</li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+		<img height="200px" alt="Avatar placeholder" src="/files/avatar.jpg">
+        <h1>Hola, mi nombre es <span class="about__name">Luis Aviles.</span></h1>
+        <h2 class="about__role">Software Developer</h2>
+        <p class="about__desc"> <!-- Edit the About make sure you add your degree!-->
+			Soy desarrollador de software con formación en ciencias de la computación con interés principalmente en inteligencia artificial y el desarrollo backend.
+        </p> <!-- about you -->
+        <br>
+        <a href="mailto:lumaaviles0@gmail.com">Email: lumaaviles0@gmail.com </a>  <!--Change it to your mail id and contact no-->
+      </br>
+      
+
+        <div class="about__contact center">
+          <a href="files/LUIS_AVILES_CV.pdf" target="_blank"  > <!-- drive link for resume-->
+            <span class="btn btn--outline">Resume</span> 
+          </a>
+
+          <a
+            href="https://github.com/Luis-a0" target="_blank"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a> <!-- Github profile Link-->
+
+          <a
+            href="https://www.linkedin.com/in/luismanuelaviles-developer/" target="_blank"  
+            aria-label="linkedin"
+            class="link link--icon"
+          > 
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a> <!-- LinledIn profile Link-->
+        </div>
+      </div>
+
+	<section id="exp" class="section exp" id="exp">
+        <h2 class="section__title">Experiencia Laboral</h2>
+
+		<div class="project">
+			<h3>Software Engineer - ELVA</h3>
+			<h5>May. 2023 - Ago. 2023</h5>
+			<p class="project__description">
+				- Investigar e implementar modelos de machine learning haciendo uso de la API de Huggingface.
+			</p>
+			<p class="project__description">
+				- Desarrollar y realizar mantenimiento para sistema de gestión de cursos implementada en Laravel.
+			</p>
+			<ul class="project__stack">
+				<li class="project__stack-item">Laravel</li>
+				<li class="project__stack-item">Python</li>
+				<li class="project__stack-item">AI</li>
+				<li class="project__stack-item">Machine Learning</li>
+				<li class="project__stack-item">Docker</li>
+				<li class="project__stack-item">FastAPI</li>
+				<li class="project__stack-item">Kubernetes</li>
+			</ul>	
+		</div>
+
+		<div class="project">
+			<h3>Software Engineer - Kuento.co</h3>
+			<h5>Sept. 2021 - Feb. 2022</h5>
+			<p class="project__description">
+				- Analizar los datos de uso de la plataforma con PowerBI.</br>
+				- Garantizar la generación del scoring crediticio de clientes con PySpark en GCloud.</br>
+				- Plantear e investigar el uso de modelos de machine learning para optimizar el acceso y uso de la plataforma.</br>
+
+				<b>Logro:</b></br>
+				- Detecté múltiples inconsistencias en el registro de información de una base de datos, donde más de 23.000 registros presentaban inconsistencias, lo que permitió corregir múltiples inconsistencias en el uso y almacenamiento de información.
+			</p>
+			<ul class="project__stack">
+				<li class="project__stack-item">Python</li>
+				<li class="project__stack-item">PowerBI</li>
+				<li class="project__stack-item">AI</li>
+				<li class="project__stack-item">Machine Learning</li>
+				<li class="project__stack-item">GCloud</li>
+				<li class="project__stack-item">Spark</li>
+			</ul>	
+		</div>
+
+		<div class="project">
+			<h3>Software Developer - CALIBRATION SERVICE SAS</h3>
+			<h5>Feb. 2021 - Jun. 2021</h5>
+			<p class="project__description">
+				- Realizar análisis sobre procesos no automatizados y semiautomatizados para su automatización.</br>
+				- Implementar diseños web que faciliten el uso del software por los usuarios.</br>
+				- Desarrollar scripts que realicen los cálculos correspondientes según normativa para cálculos en el área de metrología con Javascript.</br>
+			</p>
+			<ul class="project__stack">
+				<li class="project__stack-item">JavaScript</li>
+				<li class="project__stack-item">CSS</li>
+				<li class="project__stack-item">HTML</li>
+				<li class="project__stack-item">Metrología</li>
+			</ul>	
+		</div>
+
+		<div class="project">
+			<h3>Software Developer - Integridad Técnica, C.A</h3>
+			<h5>May. 2017 - Ene. 2021</h5>
+			<p class="project__description">
+				- Desarrollar y mantener software para la realización del proceso de gestión de integridad utilizando Python con el Framework Django.</br> 
+				- Realizar el levantamiento de información para la creación de sistema que permitiera automatizar los procesos operacionales.</br>
+				- Diseñar e implementar modelo de base de datos a utilizar para la gestión de los procesos a automatizar haciendo uso de PostgreSQL.</br> 
+				- Analizar y evaluar datos recolectados mediante inspección directa e indirecta para la generación de un modelo de pérdida de espesor de tuberías enterradas haciendo uso de Scikit-learn, Pandas y Keras.</br> 
+
+				<b>Logro:</b></br>
+				- Construí un sistema web que permitió automatizar y centralizar múltiples procesos que eran gestionados con cientos hojas de cálculo permitiendo reducir el tiempo para la toma de decisiones en un 60% aproximadamente.
+			</p>
+			<ul class="project__stack">
+				<li class="project__stack-item">Python</li>
+				<li class="project__stack-item">Django</li>
+				<li class="project__stack-item">Javascript</li>
+				<li class="project__stack-item">Scikit-Learn</li>
+				<li class="project__stack-item">PostgreSQL</li>
+				<li class="project__stack-item">Keras</li>
+				<li class="project__stack-item">Argis</li>
+			</ul>	
+		</div>
+
+		<div class="project">
+			<h3>Software Developer - Cooperativa Simón Rodríguez para el Conocimiento Libre</h3>
+			<h5>Mar. 2016 - Abr. 2017</h5>
+			<p class="project__description">
+				- Desarrollar modelo de reconocimiento facial con OpenCV.</br> 
+				- Desarrollar y mantener módulos de uso tanto interno cómo externo en Odoo.</br> 
+				- Producir documentación de proyectos propios y de otros pares.</br> 
+			</p>
+			<ul class="project__stack">
+				<li class="project__stack-item">Python</li>
+				<li class="project__stack-item">Odoo</li>
+				<li class="project__stack-item">OpenCV</li>
+				<li class="project__stack-item">Django</li>
+				<li class="project__stack-item">JavaScript</li>
+				<li class="project__stack-item">PostgreSQL</li>
+			</ul>	
+		</div>
+
+  	</section>
+
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>React Earthquake Tracker</h3> <!--Peoject Title -->
+            <p class="project__description">
+				Aplicación web desarrollada en React para visualizar información sobre terremotos ocurridos recientemente.
+            </p> <!--Project description-->
+            <ul class="project__stack">
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Leaflet</li>
+              <li class="project__stack-item">HTML/CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/Luis-a0/react-earthquake-tracker" target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >  <!--Project link-->
+
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://react-earthquake-tracker.vercel.app/"
+              aria-label="live preview"
+              class="link link--icon"
+            > <!--Project demo or git link-->
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>NB-OCR-pytesseract</h3>
+            <p class="project__description">
+				Extracción de texto a partir de imagenes en Google Colab con pytesseract
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Pytesseract</li>
+            </ul>
+
+            <a
+              href="https://github.com/Luis-a0/NB-OCR-pytesseract" target="_blank"
+              aria-label="https://github.com/Luis-a0/NB-OCR-pytesseract" target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://colab.research.google.com/github/Luis-a0/NB-OCR-pytesseract/blob/master/NB_OCR_pytesseract.ipynb"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Basic Numeric Matrix Processor</h3>
+            <p class="project__description">
+				Esta calculadora permitira realizar una variedad de operaciones con matrices, incluidas la suma, la multiplicación, la búsqueda del determinante y el manejo de matrices inversas.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+            </ul>
+
+            <a
+              href="https://github.com/Luis-a0/Numeric_Matrix_Processor" target="_blank"
+              aria-label="https://github.com/Luis-a0/Numeric_Matrix_Processor" target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+ <!-- duplicate the above section and you can change it to paper or experience-->
+
+      
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+			<li class="skills__list-item btn btn--plain">Python</li>
+			<li class="skills__list-item btn btn--plain">Django</li>
+			<li class="skills__list-item btn btn--plain">FastAPI</li>
+			<li class="skills__list-item btn btn--plain">HTML</li>                        <!--You can fill in the elective course and you can remove extras-->
+			<li class="skills__list-item btn btn--plain">CSS</li>
+			<li class="skills__list-item btn btn--plain">JavaScript</li>
+			<li class="skills__list-item btn btn--plain">SQL</li>
+			<li class="skills__list-item btn btn--plain">AI</li>
+			<li class="skills__list-item btn btn--plain">Scikit-Learn</li>
+			<li class="skills__list-item btn btn--plain">Machine Learning</li>
+			<li class="skills__list-item btn btn--plain">OpenCV</li>
+			<li class="skills__list-item btn btn--plain">React</li>
+			<li class="skills__list-item btn btn--plain">Odoo</li>
+			<li class="skills__list-item btn btn--plain">Pandas</li>
+			<li class="skills__list-item btn btn--plain">Keras</li>
+			<li class="skills__list-item btn btn--plain">Git</li>
+			<li class="skills__list-item btn btn--plain">Docker</li>
+        </ul>
+      </section>
+
+    <footer class="footer">
+      <a
+        href="" 
+        class="link footer__link"
+      >  
+        Created By Luis Aviles! <!-- edit it to your name -->
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
